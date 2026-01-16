@@ -1,16 +1,4 @@
-# AterBot ✨  
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](/LICENSE)  
-### Keep your Aternos server alive 24/7.
-Please star this project <3  
-<br/>
-
-
-
-# Important Notice 📢
-### This project will be unmaintained until at least 2024.<br/>But you can use it as usual.
-
-
-
+#  Jademin's
 # Requirements 🎒
 1. A Replit account.  
 	Sign up at: https://replit.com/signup
@@ -43,7 +31,7 @@ Finally... DONE! Enjoy your free 24/7 Aternos server.
 
 
 
-# FAQ ❓
+# Your own problem bozo
 > #### Q1: My bot leaves immediately when I close the Repl page.
 <details><summary>A1:</summary>
 
