@@ -1,10 +1,10 @@
 import HTTP from "node:http";
 
-const PORT = process.env.PORT || 3000; // ✅ fix the port
+const PORT = process.env.PORT || 3000; // use Vercel's environment port
 
 const server = HTTP.createServer((request, response) => {
   response.writeHead(200, {
-    "Access-Control-Allow-Origin": "*", // allow all origins
+    "Access-Control-Allow-Origin": "*", // allow any origin
     "Access-Control-Allow-Methods": "GET, PING, OPTIONS",
     "Content-Type": "text/html"
   });
