@@ -1,5 +1,5 @@
 import express from "express";
-import './src/index.js'; // change this to the path of your bot's main file
+import './src/index.ts'; // change this to the path of your bot's main file
 
 const app = express();
 
