@@ -1,17 +1,21 @@
-import HTTP from 'node:http';
+import express from "express";
 
-const PORT = process.PORT || 5500;
-const server = HTTP.createServer((request, response) => {
-	response.writeHead(200, {
-		"Access-Control-Allow-Origin": "https://replit.com",
-		"Access-Control-Allow-Methods": "GET, PING, OPTIONS",
-		"Content-Type": "text/html"
-	} as const);
-	response.end("<h3>Copy me, the url above!</h3>");
+const app = express();
+const PORT = Number(process.env.PORT) || 3000;
+
+// Root route (optional)
+app.get("/", (_req, res) => {
+	res.send("<h3>ButlerMC is alive!</h3>");
 });
 
+// Health route for cron-job.org
+app.get("/health", (_req, res) => {
+	res.status(200).send("OK");
+});
 
-
+// Start server
 export default (): void => {
-	server.listen(PORT, () => console.log("Server for UptimeRobot is ready!"));
+	app.listen(PORT, "0.0.0.0", () => {
+		console.log(`Web server running on port ${PORT}`);
+	});
 };

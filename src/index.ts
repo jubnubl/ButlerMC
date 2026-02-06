@@ -1,3 +1,7 @@
+import startServer from "./web";
+
+startServer(); // starts the web server with /health route
+
 import initBot from "./bot.ts";
 import initWeb from "./web.ts";
 
