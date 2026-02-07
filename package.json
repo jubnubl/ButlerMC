@@ -9,7 +9,7 @@
 	},
 	"dependencies": {
 		"express": "^5.2.1",
-		"mineflayer": "^4.20.0",
+		"mineflayer": "^4.34.0",
 		"tsx": "^4.7.1"
 	},
 	"devDependencies": {
